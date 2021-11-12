@@ -1,0 +1,449 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Hina Mincho', serif;
+}
+.logo
+{
+	border-radius: 50%;
+}
+.navbar
+{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+nav
+{
+	flex: 1;
+	text-align: right;
+}
+nav ul{
+	display: inline-block;
+	list-style-type:  none ;
+
+}
+nav ul li{
+	display: inline-block;
+	margin: 20px;
+}
+a{
+	text-decoration: none;
+	color: #8A2BE2;
+	font-weight: bold;
+}
+
+p{
+	color: #555;
+}
+.container
+{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.row
+{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.col-2
+{
+	flex-basis: 50%;
+	min-width: 300px;
+}
+.col-2 img
+{
+	max-width: 100%;
+	padding: 50px 0;
+	
+}
+.col-2 strong
+{
+	font-size: 50px;
+	line-height: 60 px;
+	margin: 25px 0;
+}
+
+.btn
+ {
+	display: inline-block;
+	background: #ff533b;
+	color: #fff;
+	padding: 2px 10px;
+	margin: 20px 0;
+	border-radius: 30px;
+	transition: background 0.5s;
+}
+.btn:hover
+{
+	background-color: yellowgreen;
+}
+.btn1
+ {
+	display: inline-block;
+	background: #ff533b;
+	color: #fff;
+	padding: 2px 10px;
+	margin: 20px 0;
+	border-radius: 30px;
+	transition: background 0.5s;
+}
+.btn1:hover
+{
+	background-color: yellowgreen;
+}
+
+.header
+{
+	background: radial-gradient(#fff);
+}
+.categories
+{
+	margin: 70px 0;
+
+}
+.categories
+{
+	background: radial-gradient(#fff,#ffd6d6d6);
+}
+
+.col-3
+{
+	flex-basis: 30%;
+	max-width: 250px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	box-shadow: 0 0 20px 0 px rgba(0,0,0,0.1);
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+.col-3 img
+{
+	border-radius: 50%;
+	width: 100%;
+	border: 1px solid darkgoldenrod;
+}
+
+.col-3:hover
+{
+	transform: translateY(-5px);
+}
+
+.small-container{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+
+}
+.col-4{
+	flex-basis: 25%;
+	padding: 10px;
+	max-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+}
+.col-4 img
+{
+	width: 100%;
+	border :1px solid darkgoldenrod;
+}
+h4 {
+	color: #ff523b;
+
+}
+.col-4
+{
+	font-size: 14px;
+}
+.col-4:hover
+{
+	transform: translateY(-5px);
+}
+.footer
+{
+	background: #000;
+	color: #8a8a8a;
+	font-size: 14px;
+	padding: 60px 0 20px;
+
+}
+.footer p
+{
+	color: #8a8a8a;
+}
+.footer h3
+{
+ color: #fff;
+ margin-bottom: 20px;
+
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4
+{
+	min-width: 250px;
+	margin-bottom: 20px;
+
+}
+.footer-col-1{
+	flex-basis: 30%;
+
+}
+
+.footer-col-2{
+	flex: 1;
+	text-align: center;
+	
+}
+.footer-col-2 img{
+	width: 180px;
+	max-width: 90px;
+}
+.footer-col-3, .footer-col-4
+{
+	flex-basis: 12%;
+	text-align: center;
+
+}
+ul
+{
+	list-style-type: none;
+}
+.app-logo
+{
+	margin: 20px;
+
+}
+.app-logo img
+{
+	width: 140px;
+}
+hr
+{
+	background: #b5b5b5;
+}
+.menu-icon
+{
+	width: 28px;
+	margin-left: 20px;
+	display: none;
+}
+
+/*--------------all products------------*/
+.row-2
+{
+	justify-content: space-between;
+	margin: 100px auto 50px;
+}
+select
+{
+	border: 1px solid #ff523b;
+	padding: 5px;
+}
+select:focus
+{
+	outline: none;
+}
+.checked
+{
+	color: orange;
+}
+
+
+@media only screen and (max-width: 800px)
+{
+	nav ul{
+		position: absolute;
+		top: 70px;
+		left: 0;
+		background: #333;
+		width: 100%;
+		overflow: hidden;
+		transition: max-height 0.5s;
+	}
+	nav ul li
+	{
+		display: block;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	nav ul li a
+	{
+		color: #fff;
+	}
+   .menu-icon
+    {
+     display: block;
+     cursor: pointer;
+    }
+}
+/* media query for less than 600 screen size*/
+@media only screen and (max-width: 600px)
+{
+	.row{
+		text-align: center;
+	}
+	.col-2,.col-3,.col-4{
+		flex-basis: 100%;
+	}
+	.single-product .row-2{
+		text-align: left;
+	}
+	.single-product .col-2{
+		padding: 20px 0;
+	}
+	.single-product h1
+	{
+		font-size: 26px;
+		line-height: 32px;
+	}
+	.cart-info p
+	{
+		display: none;
+	}
+}
+/*-------------------single product details----------------------*/
+.single-product
+{
+	margin-top: 80px;
+}
+.single-product .col-2 img
+{
+padding: 0;
+}
+.single-product .col-2
+{
+	padding: 20px;
+}
+.single-product h4
+{
+	margin: 20px 0;
+	font-size: 22px;
+	font-weight: bold;
+}
+.single-product select
+{
+	display: block;
+	padding: 10px;
+	margin-top: 20px;
+
+}
+.single-product input{
+	width: 50px;
+	height: 40px;
+	padding-left: 10px;
+	font-size: 20px;
+	margin-right: 10px;
+	border: 1px solid #ff523b;
+}
+input:focus{
+	outline: none;
+}
+.single-product .fa{
+	color: #ff523b;
+	padding-left: 10px;
+}
+.small-img-row
+{
+	display: flex;
+	justify-content: space-between;
+}
+.small-img-col
+{
+flex-basis: 24%;
+cursor: pointer;
+}
+ 
+/*----------------------------account-page-----------------------------*/
+.form-container{
+	width: 350px;
+	height: 400px;
+	position: relative;
+	text-align: center;
+	padding: 20px 0;
+	margin: auto;
+	box-shadow: 0 0 40px 20px rgba(0,0,0,0.26);
+}
+.register-photo {
+    
+    padding: 50px 0;
+}
+
+.register-photo .image-holder {
+    display: table-cell;
+    width: auto;
+    background: url(images/image1.jpg);
+    background-size: cover
+}
+
+.register-photo .form-container {
+    display: table;
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    border: 1px solid darkgoldenrod;
+}
+
+.register-photo form {
+    display: table-cell;
+    width: 400px;
+    background-color: #ffffff;
+    padding: 40px 60px;
+    color: #505e6c
+}
+
+.register-photo form .form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 0px;
+    height: 40px
+}
+
+.register-photo form .already {
+    display: block;
+    text-align: center;
+   
+    }
+    /*--------------------------for social media images--------------------*/
+   .footer-col-4 .fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.footer-col-4 .fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.footer-col-4 .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.footer-col-4 .fa-instagram {
+  background: #55ACEE;
+  color: white;
+}
+.footer-col-4 .fa-youtube {
+  background: orangered;
+  color: white;
+}
+
